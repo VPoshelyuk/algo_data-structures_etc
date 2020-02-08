@@ -33,8 +33,7 @@
 var buddyStrings = function(A, B) {
     if(A.length !== B.length) return false
     if(A === B){
-        if(new Set(A).size !== A.length) return true
-        return false
+        return new Set(A).size !== A.length
     }
     let swap = []
     let counter = 0
